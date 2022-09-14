@@ -52,16 +52,25 @@ class HomeController extends GetxController {
         data: formData,
       );
 
+      // ignore: avoid_print
       print(response.statusCode);
+      // ignore: avoid_print
       print(response.statusMessage);
+      // ignore: avoid_print
       print(response.data);
     } on dio.DioError catch (e) {
+      // ignore: avoid_print
       print("==== DIO EXCEPTION ====");
+      // ignore: avoid_print
       print(e.message);
+      // ignore: avoid_print
       print(e.error);
+      // ignore: avoid_print
       print(e.response?.data);
     } catch (e) {
+      // ignore: avoid_print
       print("==== CATCH ERROR ====");
+      // ignore: avoid_print
       print(e);
     }
   }
